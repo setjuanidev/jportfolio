@@ -1,0 +1,32 @@
+body{
+    background-color: #ececec;
+}
+/*.nav-link{
+    color: rgb(0, 0, 0);/*808000
+}
+
+.nav-link:hover{
+    color: #818105;
+}*/
+.navbar{
+    color: rgb(0, 0, 0);
+}
+section{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.article{
+    
+    color: rgb(0, 0, 0);
+}
+.col{
+    border-top: 3px;
+    border-bottom: 3px;
+}
+.zoom{
+    transition: transform .3s;
+}
+.col:hover{
+    color: #818105;
+    transform: scale(1.1);
+}
