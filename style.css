@@ -1,5 +1,5 @@
 body{
-    background-color: #ececec;
+    background-color: #000000;
 }
 /*.nav-link{
     color: rgb(0, 0, 0);/*808000
@@ -14,7 +14,6 @@ body{
 section{
     border: 2px solid rgb(0, 0, 0);
 }
-
 .article{
     
     color: rgb(0, 0, 0);
@@ -25,6 +24,10 @@ section{
 }
 .zoom{
     transition: transform .3s;
+}
+.col:hover{
+    color: #818105;
+    transform: scale(1.1);
 }
 .col:hover{
     color: #818105;
