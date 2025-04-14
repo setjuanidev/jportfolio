@@ -144,3 +144,43 @@ body {
     font-size: 1.1rem;
   }
 }
+.modal-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ffeeba;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  z-index: 999;
+  display: none;
+  animation: fadeInModal 0.8s ease-out;
+}
+
+.modal-alert.show {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-alert button {
+  background-color: #856404;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.modal-alert button:hover {
+  background-color: #6c5203;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
