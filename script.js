@@ -1,15 +1,11 @@
-[JavaScript - script.js]
-const sections = document.querySelectorAll('.section');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, {
-  threshold: 0.1
-});
+window.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('alertModal');
+  const closeBtn = document.getElementById('closeAlert');
 
-sections.forEach(section => {
-  observer.observe(section);
+  // Mostrar al cargar la pag
+    modal.classList.add('show');
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
 });
