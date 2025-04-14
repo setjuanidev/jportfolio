@@ -2,60 +2,68 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículum - Nombre Apellido</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum - Juan Ignacio Mercado</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <div class="cv-container">
-    <header>
-      <h1>Nombre Apellido</h1>
-      <p class="titulo">Tu especialidad profesional</p>
+  <main class="cv fade-in">
+    <header class="cv-header">
+      <h1>Juan Ignacio Mercado</h1>
+      <p class="cv-subtitle">Comercial y desarrollador web</p>
+      <a class="cv-button" href="cv.pdf" download><i class="fas fa-download"></i> Descargar CV (PDF)</a>
     </header>
 
-    <section class="perfil">
-      <h2>Perfil Profesional</h2>
+    <section class="cv-section">
+      <h2><i class="fas fa-user"></i> Perfil Profesional</h2>
       <p>
-        Soy una persona responsable, proactiva y con habilidades para el trabajo en equipo. Cuento con experiencia en atención al cliente y ventas.
+        Soy un profesional con experiencia en ventas y atención al cliente. He desarrollado una gran capacidad para entender y reconocer lo que necesita el cliente, mostrando paciencia y compromiso para garantizar que vuelvan a elegirnos.
       </p>
     </section>
 
-    <section class="experiencia">
-      <h2>Experiencia</h2>
-      <div class="item">
-        <h3>Vendedor / Encargado de Tienda</h3>
-        <span>Comercio de Electrodomésticos - 2018 a Presente</span>
-        <p>Atención al cliente, manejo de caja, control de stock, supervisión del personal y cierre de ventas.</p>
+    <section class="cv-section">
+      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+      <div class="cv-item">
+        <h3>Encargado de tienda – Local de electrodomésticos</h3>
+        <span class="cv-date">2022 – Presente</span>
+        <p>
+          Responsable de la atención al cliente, ventas, organización del local, control de stock y manejo de caja. Desarrollo de estrategias para fidelizar clientes.
+        </p>
       </div>
     </section>
 
-    <section class="formacion">
-      <h2>Formación Académica</h2>
-      <div class="item">
-        <h3>Secundario Completo</h3>
-        <span>Escuela Nombre - Año</span>
-      </div>
-      <div class="item">
-        <h3>Cursos en Proceso</h3>
-        <span>Análisis de Datos con Python, Desarrollo Web</span>
+    <section class="cv-section">
+      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+      <div class="cv-item">
+        <h3>Curso de análisis de datos con Python</h3>
+        <span class="cv-date">Terminado</span>
+        <p>
+          Curso online orientado a análisis de datos utilizando Python, bibliotecas como pandas, matplotlib y herramientas como Jupyter.
+        </p>
       </div>
     </section>
 
-    <section class="skills">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Atención al Cliente</li>
-        <li>Paciencia y Resolución de Problemas</li>
-        <li>Trabajo en equipo</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Power BI, SQL (MariaDB)</li>
+    <section class="cv-section">
+      <h2><i class="fas fa-tools"></i> Habilidades</h2>
+      <ul class="cv-skills">
+        <li><i class="fas fa-users"></i> Atención al cliente</li>
+        <li><i class="fas fa-comment-dots"></i> Escucha activa</li>
+        <li><i class="fab fa-html5"></i> HTML / CSS / JS</li>
+        <li><i class="fas fa-code"></i> Visual Studio Code</li>
+        <li><i class="fas fa-database"></i> XAMPP / MariaDB</li>
+        <li><i class="fas fa-chart-bar"></i> Power BI</li>
       </ul>
     </section>
 
-    <footer>
-      <p>📍 Barcelona, España · 📞 (+34) 654234289 · ✉️ set.juanidev@gmail.com</p>
+    <footer class="cv-footer">
+      <p>
+        <i class="fas fa-envelope"></i> set.juanidev@gmail.com &nbsp; | &nbsp;
+        <i class="fas fa-phone"></i> +34 654234289 &nbsp; | &nbsp;
+        <i class="fas fa-map-marker-alt"></i> Barcelona, España
+      </p>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
