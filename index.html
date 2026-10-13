@@ -1,121 +1,188 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Currículum - Juan Ignacio Mercado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Ignacio Mercado Rojas | Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
   <main class="cv fade-in">
+
     <header class="cv-header">
-      <h1>Juan Ignacio Mercado</h1>
-      <p class="cv-subtitle">Comercial y Desarrollador Web</p>
-      <a class="cv-button" href="cv.pdf" download><i class="fas fa-download"></i> Descargar CV</a>
+      <div class="language-selector">
+        <button type="button" data-lang="en">EN</button>
+        <span>|</span>
+        <button type="button" data-lang="es">ES</button>
+      </div>
+
+      <h1>Juan Ignacio Mercado Rojas</h1>
+
+      <p class="cv-subtitle" data-i18n="subtitle">
+        Web Development Student | IT Support Technician
+      </p>
+
+      <a class="cv-button" href="CV JUAN IGNACIO MERCADO ROJAS.pdf" download>
+        <i class="fas fa-download"></i>
+        <span data-i18n="downloadCV">Download CV</span>
+      </a>
     </header>
 
+    <!-- PROFESSIONAL PROFILE -->
     <section class="cv-section">
-      <h2><i class="fas fa-user"></i> Perfil Profesional</h2>
-      <p>
-        Disfruto crear sitios web simples y funcionales con HTML, CSS y JS, enfocándome en interfaces limpias y detalles que marcan la diferencia.Mi experiencia en ventas me ha permitido desarrollar una gran capacidad para enteder las necesidades del cliente, algo que aplico al diseñar soluciones web centradas en el usuario.
+      <h2>
+        <i class="fas fa-user"></i>
+        <span data-i18n="profile">Professional Profile</span>
+      </h2>
+
+      <p data-i18n="profileDescription">
+        I enjoy creating simple and functional websites using HTML, CSS and JavaScript, focusing on clean interfaces and attention to detail. My experience in sales has helped me understand customer needs, which I apply when designing user-centred web solutions.
       </p>
     </section>
 
+    <!-- WORK EXPERIENCE -->
     <section class="cv-section">
-      <h2><i class="fas fa-briefcase"></i> Experiencia Laboral</h2>
+      <h2>
+        <i class="fas fa-briefcase"></i>
+        <span data-i18n="experience">Work Experience</span>
+      </h2>
+
       <div class="cv-item">
-        <h3>Encargado de tienda – Local de electrodomésticos</h3>
-        <span class="cv-date">2022 – Presente</span>
-        <p>
-          Responsable de la atención al cliente, ventas, organización del local, control de stock y manejo de caja. Desarrollo de estrategias para fidelizar clientes.
-        </p>
-      </div>
-      
-      <div class="cv-item">
-        <h3>Freelance - Diseño Web</h3>
-        <span class="cv-date">2024 – Presente</span>
-        <p>
-          Diseño y maquetación Web.
+        <h3>Hotel Friheden — Bornholm, Denmark</h3>
+        <span class="cv-date" data-i18n="kitchenAssistant">2026 | Kitchen Assistant</span>
+        <p data-i18n="kitchenDescription">
+          Prepared and assembled starters, main courses and desserts. Managed the salad buffet and replenished food supplies. Prepared ingredients, including cutting and portioning. Supported the chef and kitchen team during service. Maintained kitchen cleanliness and organisation.
         </p>
       </div>
 
       <div class="cv-item">
-        <h3>Servicio Técnico - Macrosistemas SRL</h3>
-        <span class="cv-date">2019 - 2021</span>
-        <p>
-          Soporte técnico Software y Hardware. Helpsdesk. Armado de PC.
+        <h3>Hotel Friheden — Bornholm, Denmark</h3>
+        <span class="cv-date" data-i18n="allRounder">2026 | All-Rounder</span>
+        <p data-i18n="allRounderDescription">
+          Carried out general maintenance, basic repairs and painting. Cleaned lodges, kitchens and shared living areas. Performed gardening and plant care. Assisted with dishwashing and restaurant service as a runner when required.
+        </p>
+      </div>
+
+      <div class="cv-item">
+        <h3>Miró Electrodomésticos — Barcelona, Spain</h3>
+        <span class="cv-date" data-i18n="storeManager">Store Manager</span>
+        <p data-i18n="storeManagerDescription">
+          Managed daily store operations, sales and customer service. Handled stock control, cash management and store organisation. Advised customers and built long-term customer relationships.
+        </p>
+      </div>
+
+      <div class="cv-item">
+        <h3>Casa Dorita — Barcelona, Spain</h3>
+        <span class="cv-date" data-i18n="waiter">Waiter</span>
+      </div>
+
+      <div class="cv-item">
+        <h3>LomosArg — Barcelona, Spain</h3>
+        <span class="cv-date" data-i18n="waiterAndShiftSupervisor">Waiter &amp; Shift Supervisor</span>
+      </div>
+
+      <div class="cv-item">
+        <h3>Pizza R — Córdoba, Argentina</h3>
+        <span class="cv-date" data-i18n="supervisor">Supervisor</span>
+      </div>
+
+      <div class="cv-item">
+        <h3 data-i18n="itSupportTitle">Independent IT Support Technician</h3>
+        <span class="cv-date" data-i18n="freelance">Freelance · Remote and On-site</span>
+        <p data-i18n="itSupportDescription">
+          Provided technical support for hardware and software issues. Diagnosed and troubleshot computer problems. Assembled, upgraded and maintained PCs. Assisted clients with technical issues remotely and on-site.
         </p>
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section class="cv-section">
-      <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
+      <h2>
+        <i class="fas fa-graduation-cap"></i>
+        <span data-i18n="education">Education</span>
+      </h2>
+
       <div class="cv-item">
-        <h3>Curso de análisis de datos con Python</h3>
-        <span class="cv-date">MasterD  2024 - 2025</span>
-        <p>
-          Curso online orientado a análisis de datos utilizando Python, bibliotecas como pandas, matplotlib y herramientas como Jupyter.
+        <h3 data-i18n="webDevelopmentDegree">Web Development Degree</h3>
+        <span class="cv-date" data-i18n="unER">
+          Universidad Nacional de Entre Ríos (UNER), Argentina
+        </span>
+        <p data-i18n="webDevelopmentDegreeDescription">
+          Currently studying Web Development.
         </p>
       </div>
+
       <div class="cv-item">
-        <h3>Servicios Web</h3>
-        <span class="cv-date">Tajamar  2023</span>
-        <p>
-          Curso de servicios web.
+        <h3 data-i18n="dataAnalysisCourse">Data Analysis with Python</h3>
+        <span class="cv-date">MasterD</span>
+        <p data-i18n="dataAnalysisDescription">
+          Online training in Python, pandas, Matplotlib and data analysis tools such as Jupyter.
         </p>
       </div>
+
       <div class="cv-item">
-        <h3>Desarrollo con Python.</h3>
-        <span class="cv-date">Edutin  2023</span>
-        <p>
-          Uso de Python nivel medio.
+        <h3 data-i18n="webServicesTitle">Web Services</h3>
+        <span class="cv-date">Tajamar</span>
+        <p data-i18n="webServicesDescription">
+          Training in web services.
         </p>
       </div>
+
       <div class="cv-item">
-        <h3>Desarrollo web Javascript.</h3>
-        <span class="cv-date">Tajamar  2023</span>
-        <p>
-          Conocimiento de Javascript.
+        <h3 data-i18n="pythonDevelopmentTitle">Python Development</h3>
+        <span class="cv-date">Edutin</span>
+        <p data-i18n="pythonDevelopmentDescription">
+          Intermediate-level Python programming.
         </p>
       </div>
+
       <div class="cv-item">
-        <h3>Licenciatura en desarrollo web.</h3>
-        <span class="cv-date">ArgentinaPrograma  2022 - 2023</span>
-        <p>
-          HTML, CSS, JAVASCRIPT.
+        <h3 data-i18n="javascriptDevelopmentTitle">JavaScript Web Development</h3>
+        <span class="cv-date">Tajamar</span>
+        <p data-i18n="javascriptDevelopmentDescription">
+          Training in JavaScript web development.
         </p>
       </div>
     </section>
 
+    <!-- SKILLS -->
     <section class="cv-section">
-      <h2><i class="fas fa-tools"></i> Habilidades</h2>
+      <h2>
+        <i class="fas fa-tools"></i>
+        <span data-i18n="skills">Skills</span>
+      </h2>
+
       <ul class="cv-skills">
-        <li><i class="fas fa-users"></i> Atención al cliente</li>
-        <li><i class="fas fa-comment-dots"></i> Escucha activa</li>
+        <li><i class="fas fa-users"></i> <span data-i18n="customerService">Customer service</span></li>
+        <li><i class="fas fa-comment-dots"></i> <span data-i18n="activeListening">Active listening</span></li>
         <li><i class="fab fa-html5"></i> HTML</li>
-        <li><i class="fa-brands fa-css"></i>CSS</li>
-        <li><i class="fab fa-js"></i>JS</li>
+        <li><i class="fa-brands fa-css"></i> CSS</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
         <li><i class="fas fa-code"></i> Visual Studio Code</li>
         <li><i class="fas fa-database"></i> XAMPP / MariaDB</li>
         <li><i class="fas fa-chart-bar"></i> Power BI</li>
       </ul>
     </section>
 
+    <!-- CONTACT -->
     <footer class="cv-footer">
       <p>
-        <i class="fas fa-envelope"></i> set.juanidev@gmail.com &nbsp; | &nbsp;
-        <i class="fas fa-phone"></i> +34 0000000 &nbsp; | &nbsp;
-        <i class="fas fa-map-marker-alt"></i> Barcelona, España
+        <i class="fas fa-envelope"></i> mail@gmail.com
+        &nbsp; | &nbsp;
+        <i class="fas fa-phone"></i> +34 0000000
+        &nbsp; | &nbsp;
+        <i class="fas fa-map-marker-alt"></i>
+        <span data-i18n="location">Copenhagen, Denmark</span>
       </p>
     </footer>
+
   </main>
-  <div id="alertModal" class="modal-alert">
-      <p>⚠️ Atención: CV en mantenimiento. Pronto estará cargado al 100%.</p>
-      <button id="closeAlert">Cerrar</button>
-  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
